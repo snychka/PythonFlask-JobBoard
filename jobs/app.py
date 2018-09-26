@@ -6,3 +6,7 @@ app = Flask(__name__)
 @app.route('/jobs')
 def jobs():
     return render_template('index.html')
+
+@app.route('/layout')
+def layout():
+    return render_template('layout.html')
